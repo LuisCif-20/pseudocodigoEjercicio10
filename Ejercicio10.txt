@@ -1,0 +1,21 @@
+Proceso
+	var total <- 0
+	var mult6 <- 0
+	var cont <- 0
+	Hacer
+		var numentrado
+		Escribir "Ingrese un numero"
+		Leer numentrado
+		total <-  total + numentrado
+		mult = MOD(numentrado, 6)
+		Si mult = 0
+			mult6 = mult6 + 1
+		FinSi
+		Si numentrado >= 1 & numentrado <= 0
+			cont <- cont + numentrado
+		FinSi
+	Mientras total < 1000
+	Escribir "La suma de los numeros ingresados es " + total
+	Escribir "Se ingresaron " + multp6 + " multiplos 6"
+	Escribir "La suma de los numeros que se encuentran de 1 a 10 es " + cont
+FinProceso
